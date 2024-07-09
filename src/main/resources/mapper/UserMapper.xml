@@ -13,15 +13,19 @@
             <result property="userPassword" column="userPassword" jdbcType="VARCHAR"/>
             <result property="userStatus" column="userStatus" jdbcType="INTEGER"/>
             <result property="phone" column="phone" jdbcType="VARCHAR"/>
+            <result property="email" column="email" jdbcType="VARCHAR"/>
             <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
             <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
             <result property="isDelete" column="isDelete" jdbcType="TINYINT"/>
+            <result property="userRole" column="userRole" jdbcType="INTEGER"/>
+            <result property="planetCode" column="planetCode" jdbcType="VARCHAR"/>
     </resultMap>
 
     <sql id="Base_Column_List">
         id,username,userAccount,
         avatarUrl,gender,userPassword,
-        userStatus,phone,createTime,
-        updateTime,isDelete
+        userStatus,phone,email,
+        createTime,updateTime,isDelete,
+        userRole,planetCode
     </sql>
 </mapper>
