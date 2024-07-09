@@ -1,9 +1,7 @@
 package com.tig.usercenter.mapper;
 
-
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.tig.usercenter.model.domain.User;
-
 
 /**
 * @author jsnlg
